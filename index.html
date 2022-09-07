@@ -19,38 +19,27 @@
 <body>
    
     <!-- NavBar from Bootstrap -->
-    <!-- <nav class="nav">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">Weather Analysis Project</a>
-            </div>
-            <ul class = "nav navbar-nav">
-                <li><a href="#">Visualizations</a></li>
-                <li><a href="#">Comparisons</a></li>
-                <li><a href="#">Data</a></li>
-            </ul>
-        </div>
-    </nav> -->
-
     <nav class="navbar navbar">
         <div class="container-fluid">
           <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">Weather Analysis Project</a>
+                <a class="navbar-brand" href="index.html">Weather Analysis Project</a>
           </div>
-          <ul class="nav navbar-nav">
-              <li class="dropdown">
-              <a class="dropdown-toggle" data-bs-toggle="dropdown">Visualizations
-              <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="visualizations/Temperature.html">Temperature</a></li>
-                <li><a href="visualizations/Humidity.html">Humidity</a></li>
-                <li><a href="visualizations/Cloudiness.html">Cloudiness</a></li>
-                <li><a href="visualizations/Wind Speed.html">Wind Speed</a></li>
-              </ul>
-            </li>
-            <li><a href="comparisons.html">Comparisons</a></li>
-            <li><a href="data.html">Data</a></li>
-          </ul>
+          <div></div>
+          <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                <a class="dropdown-toggle" data-bs-toggle="dropdown">Visualizations<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="visualizations/Temperature.html">Temperature</a></li>
+                  <li><a href="visualizations/Humidity.html">Humidity</a></li>
+                  <li><a href="visualizations/Cloudiness.html">Cloudiness</a></li>
+                  <li><a href="visualizations/Wind Speed.html">Wind Speed</a></li>
+                </ul>
+                </li>
+                <li><a href="comparisons.html">Comparisons</a></li>
+                <li><a href="data.html">Data</a></li>
+            </ul>
+            </div>
         </div>
       </nav>
 
@@ -59,7 +48,13 @@
     <h2>What is this Project?</h2>
     <p>
         The goal of this project was see how different weather measurements relate to the latitude of the measured location. To do this, 
-        we used data obtained from OpenWeatherAPI on a list of over 500 cities around the world. 
+        we used data obtained from OpenWeatherAPI on a list of over 500 cities around the world. From this data, I extracted some key measurements to compare:
+        temperature, humidity, cloudiness, and wind speed. 
+    </p>
+    <br/>
+    <p>
+        To examine the relationship between the measurements and the city's latitude, I graphed the measurement values against the city's latitude. The only 
+        measurement that had a clear relationship was the temperature.  
     </p>
     <a href="visualizations/Temperature.html">
         <img src="assets/images/max_temp.png" alt="A scatter plot comparing the maximum temperature of cities to their latitude">
