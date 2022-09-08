@@ -5,6 +5,6 @@ nav {background-color: aqua;}
 
 body {background-color: azure;}
 
-h1 {text-align: center;}
-
-h4 {text-align: center;}
+h1 {text-align: center;
+    color: darkblue;
+    font-weight: bold;}
