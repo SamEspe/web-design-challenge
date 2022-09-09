@@ -40,7 +40,7 @@
                 <li><a href="../data.html">Data</a></li>
 
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <li><a href="Temperature.html">Temperature</a></li>
                     <li><a href="Humidity.html">Humidity</a></li>
@@ -54,18 +54,25 @@
       </nav>
     <!-- Heading -->
     <h1>Maximum Temperature and Latitude</h1>
-
-    <!-- Graph Image -->
-    <img src="../assets/images/max_temp.png" alt="A scatter plot comparing the maximum temperature of cities to their latitude">
-    <br/>
-    <!-- Discuss Graph -->
-    <p>
-        In this graph, I'm comparing the maximum measured temperature in each city to its latitude. There is an inverted "U"-shaped distribution, and the 
-        data are clearly grouped together. Rhe highest part of the inverted "U" is around 20 degrees north. This makes sense because June 13th, 2018 is in 
-        the summer in the northern hemisphere. On the summer solstice (June 21st, 2018), the Sun appears directly overhead at latitude ~23.5 degrees North. 
-        Areas around 23.5 degrees North experience the most direct sunlight in the northern hemisphere summer, so they tend to be some of the hottest areas.
-    </p>
-
+    
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-3"></div>
+            <div class = "col-md-9">
+                <!-- Graph Image -->
+                <img src="../assets/images/max_temp.png" alt="A scatter plot comparing the maximum temperature of cities to their latitude">
+                <br/>
+            </div>
+        </div>
+        
+        <!-- Discuss Graph -->
+        <p>
+            In this graph, I'm comparing the maximum measured temperature in each city to its latitude. There is an inverted "U"-shaped distribution, and the 
+            data are clearly grouped together. Rhe highest part of the inverted "U" is around 20 degrees north. This makes sense because June 13th, 2018 is in 
+            the summer in the northern hemisphere. On the summer solstice (June 21st, 2018), the Sun appears directly overhead at latitude ~23.5 degrees North. 
+            Areas around 23.5 degrees North experience the most direct sunlight in the northern hemisphere summer, so they tend to be some of the hottest areas.
+        </p>
+    </div> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.bundle.min.js"></script>
     
 </body>

@@ -40,7 +40,7 @@
                     <li><a href="../data.html">Data</a></li>
     
                   <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="Temperature.html">Temperature</a></li>
                         <li><a href="Humidity.html">Humidity</a></li>
@@ -56,15 +56,24 @@
     <!-- Heading -->
     <h1>Cloudiness and Latitude</h1>
 
-    <!-- Graph Image -->
-    <img src="../assets/images/cloudiness.png" alt="A scatter plot comparing the cloudiness of cities to their latitude.">
-    <!-- Graph Discussion -->
-      <p>
-        In this plot, I'm comparing the cloudiness of a city to its latitude. There doesn't seem to be much of a trend here.
-        There is a group where it's about 90% cloudy, but that's distributed approximately uniformly across latitudes. 
-        There is a larger group that is 0% cloudy, and it is also approximately uniform across latitudes. There are some horizontal lines, 
-        but those are probably due to common rounding values (20%, 40%, 75%, etc.).
-      </p>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-3"></div>
+            <div class = "col-md-9">
+                <!-- Graph Image -->
+                <img src="../assets/images/cloudiness.png" alt="A scatter plot comparing the cloudiness of cities to their latitude.">      
+                <br/>
+            </div>
+        </div>
+        
+         <!-- Graph Discussion -->
+        <p>
+            In this plot, I'm comparing the cloudiness of a city to its latitude. There doesn't seem to be much of a trend here.
+            There is a group where it's about 90% cloudy, but that's distributed approximately uniformly across latitudes. 
+            There is a larger group that is 0% cloudy, and it is also approximately uniform across latitudes. There are some horizontal lines, 
+            but those are probably due to common rounding values (20%, 40%, 75%, etc.).
+        </p>
+    </div> 
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.bundle.min.js"></script>
     
