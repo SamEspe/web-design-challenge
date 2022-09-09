@@ -1,7 +1,7 @@
 /* This is going to be my CSS to style my website  */
 
 /* Change background color of the navbar */
-nav {background-color: aqua;}
+.navbar {background-color: aqua;}
 
 body {background-color: azure;}
 
